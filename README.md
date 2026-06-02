@@ -2,6 +2,8 @@
 
 Personal portfolio site for **Chaxu Patel**, Jr. Unity Developer. Static HTML, CSS, and JavaScript — no build step required.
 
+**Repository:** [github.com/Chaxupatel/portfolio](https://github.com/Chaxupatel/portfolio)
+
 ## Project structure
 
 ```
@@ -35,12 +37,18 @@ Then visit [http://localhost:8000](http://localhost:8000).
 3. **Source**: Deploy from branch `main` (or `master`), folder **/ (root)**.
 4. Your site will be live at `https://<username>.github.io/<repo-name>/`.
 
-## Connect to your GitHub repo
+## Push to GitHub
 
-If the remote URL does not match your repo, update it:
+Remote is configured as `https://github.com/Chaxupatel/portfolio.git`.
 
 ```bash
-git remote set-url origin https://github.com/Chaxupatel/YOUR-REPO-NAME.git
+git push -u origin main
+```
+
+If the remote repo already has commits (e.g. a README created on GitHub):
+
+```bash
+git pull origin main --rebase
 git push -u origin main
 ```
 
