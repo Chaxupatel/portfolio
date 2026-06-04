@@ -1,58 +1,52 @@
 # Chaxu Patel — Portfolio
 
-Personal portfolio site for **Chaxu Patel**, Jr. Unity Developer. Static HTML, CSS, and JavaScript — no build step required.
+Personal portfolio for **Chaxu Patel**, Jr. Unity Developer (SE-1).
 
+**Live site:** [chaxupatel.github.io/portfolio](https://chaxupatel.github.io/portfolio/)  
 **Repository:** [github.com/Chaxupatel/portfolio](https://github.com/Chaxupatel/portfolio)
 
 ## Project structure
 
 ```
-portfolio-main/
-├── index.html          # Main page (keep at root for GitHub Pages)
-├── css/
-│   └── style.css       # Styles
-├── js/
-│   └── main.js         # Small scripts (e.g. footer year)
-├── assets/
-│   └── images/         # Screenshots, favicon, project art
-├── .gitignore
+portfolio/
+├── index.html
+├── css/style.css
+├── js/main.js
+├── assets/images/
+├── robots.txt          # Search engine crawlers
+├── sitemap.xml         # Helps Google index the site
+├── .nojekyll           # GitHub Pages static hosting
 └── README.md
 ```
 
 ## Run locally
 
-Open `index.html` in a browser, or use a simple local server:
-
 ```bash
-# Python 3
 python3 -m http.server 8000
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000).
+Open [http://localhost:8000](http://localhost:8000).
 
-## Deploy with GitHub Pages
+## GitHub Pages
 
-1. Push this repo to GitHub.
-2. On the repo: **Settings → Pages**.
-3. **Source**: Deploy from branch `main` (or `master`), folder **/ (root)**.
-4. Your site will be live at `https://<username>.github.io/<repo-name>/`.
+1. Push to `main`.
+2. Repo **Settings → Pages** → Source: branch **main**, folder **/ (root)**.
+3. Live URL: `https://chaxupatel.github.io/portfolio/`
 
-## Push to GitHub
+## Appear on Google (SEO)
 
-Remote is configured as `https://github.com/Chaxupatel/portfolio.git`.
+After the site is live:
 
-```bash
-git push -u origin main
-```
+1. Open [Google Search Console](https://search.google.com/search-console).
+2. Add property: `https://chaxupatel.github.io/portfolio/`
+3. Verify ownership (HTML tag or DNS — GitHub Pages URL method works).
+4. Submit sitemap: `https://chaxupatel.github.io/portfolio/sitemap.xml`
+5. Request indexing for the homepage.
 
-If the remote repo already has commits (e.g. a README created on GitHub):
-
-```bash
-git pull origin main --rebase
-git push -u origin main
-```
+Indexing can take **days to several weeks**. Link your portfolio from **LinkedIn** and **GitHub profile** to speed this up.
 
 ## Contact
 
 - Email: caxu2003@gmail.com
 - GitHub: [Chaxupatel](https://github.com/Chaxupatel)
+- LinkedIn: [chaxu-patel](https://www.linkedin.com/in/chaxu-patel-8b4a78224/)
